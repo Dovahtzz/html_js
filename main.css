@@ -1,0 +1,11 @@
+.area-tela {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-num {
+    
+}
