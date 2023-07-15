@@ -1,11 +1,55 @@
-.area-tela {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Noto+Sans:wght@700&display=swap');
+
+
+
+body {
     margin: 0;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.area-tela {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .card-num {
-    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: rgb(66, 66, 66);
+    width: fit-content;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
+
+.num-box ::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+}
+
+.num-box input {
+    border-radius: 6px;
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+}
+
+.btn button {
+    border-radius: 6px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 9pt;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+}
+
+.btn :hover {
+    color: rgb(25, 141, 35);
+}
+

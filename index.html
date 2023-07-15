@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <title>Atividade HTML + JS</title>
 </head>
 <body>
@@ -10,15 +11,19 @@
         <div class="card-num">
             <h3>Digite os números escolhidos a baixo:</h3>
             <div class="num-box">
-                <input type="number" name="num1" placeholder="Primeiro número">
+                <input type="number" id="num1" name="num1" placeholder="Primeiro número">
             </div>
             <div class="num-box">
-                <input type="number" name="num2" placeholder="Segundo número">
+                <input type="number" id="num2" name="num2" placeholder="Segundo número">
             </div>
             <div class="btn">
-                <button type="submit">submit</button>
+                <button class="btn" onclick="numcheck()">submit</button>
+            </div>
+            <div class="mensagem">
+                <p id="mensagem"></p>
             </div>
         </div>
     </div>
+    <script src="/main.js"></script>
 </body>
 </html>
