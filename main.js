@@ -3,14 +3,19 @@ function numcheck() {
     let numero2 = document.getElementById('num2');
     let mensagem = document.getElementById('mensagem')
 
-    if (numero1.value !== numero2.value) {
-        mensagem.textContent = "os números são diferentes";1
+    if (numero1.value > numero2.value) {
+        mensagem.textContent = "o número A é maior que o número B";
         mensagem.style.color = "red";
-    } else {
-        mensagem.textContent = "os números são iguais";
-        mensagem.style.color ="green";
         limparcampos();
-    }
+    } else if (numero1.value == numero2.value) {
+        mensagem.textContent = "o número A é igual ao número B";
+        mensagem.style.color = "white";
+        limparcampos();
+    } else if (numero1.value < numero2.value) {
+        mensagem.textContent = "o número B é maior que o número A";
+        mensagem.style.color = "green";
+        limparcampos();
+    } 
 }
 
 function limparcampos() {
